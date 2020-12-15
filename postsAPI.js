@@ -43,47 +43,47 @@ Route.get('/get-all-posts', (req,res) => {
     });
 } )
 
-// Route.post('/add-new-post', (req, res) => {
-//     console.log(req.body);
-//     let query = `INSERT INTO posts (name, age)
-//     VALUES ('${req.body.name}', '${req.body.age}')`;
+Route.post('/add-new-post', (req, res) => {
+    console.log(req.body);
+    let query = `INSERT INTO posts (name, age)
+    VALUES ('${req.body.name}', '${req.body.age}')`;
 
-//     con.query(query, (err, rows, fields) => {
-//         if (!err) {
-//             res.send(rows);
-//         } else {
-//             console.log(`Error: ${err} occured.`);
-//         }
-//     })
-// })
+    con.query(query, (err, rows, fields) => {
+        if (!err) {
+            res.send(rows);
+        } else {
+            console.log(`Error: ${err} occured.`);
+        }
+    })
+})
 
-// Route.post('/update-post', (req, res) => {
-//     console.log(req.body);
-//     let query =  `UPDATE posts
-//     SET name = '${req.body.name}', age= '${req.body.age}'
-//     WHERE id = '${req.body.id}'`;   
+Route.post('/update-post', (req, res) => {
+    console.log(req.body);
+    let query =  `UPDATE posts
+    SET name = '${req.body.name}', age= '${req.body.age}'
+    WHERE id = '${req.body.id}'`;   
 
-//     con.query(query, (err, rows, fields) => {
-//         if (!err) {
-//             res.send(rows);
-//         } else {
-//             console.log(`Error: ${err} occured.`);
-//         }
-//     })
-// })
+    con.query(query, (err, rows, fields) => {
+        if (!err) {
+            res.send(rows);
+        } else {
+            console.log(`Error: ${err} occured.`);
+        }
+    })
+})
 
-// Route.post('/delete-post', (req, res) => {
-//     console.log(req.body);
-//     let query =  `DELETE FROM posts WHERE id='${req.body.id}'`;   
+Route.post('/delete-post', (req, res) => {
+    console.log(req.body);
+    let query =  `DELETE FROM posts WHERE id='${req.body.id}'`;   
 
-//     con.query(query, (err, rows, fields) => {
-//         if (!err) {
-//             res.send(rows);
-//         } else {
-//             console.log(`Error: ${err} occured.`);
-//         }
-//     })
-// })
+    con.query(query, (err, rows, fields) => {
+        if (!err) {
+            res.send(rows);
+        } else {
+            console.log(`Error: ${err} occured.`);
+        }
+    })
+})
 
 
 
