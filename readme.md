@@ -7,6 +7,7 @@ npm init -y (y is optional)
 ```
 npm install --save express express-handlebars mysql body-parser 
 npm install --save-dev nodemon
+npm install cors
 ```
 
 #in packege.json replace
